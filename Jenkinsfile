@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'npm build'
             }
-        },
+        }
         stage('test') {
             steps {
                 retry(3) {
