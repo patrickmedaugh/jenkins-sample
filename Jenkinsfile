@@ -3,7 +3,14 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'npm build'
+            }
+        },
+        stage('test') {
+            steps {
+                retry(3) {
+                    sh 'npm test'
+                }
             }
         }
     }
