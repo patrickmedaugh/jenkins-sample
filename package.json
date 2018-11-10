@@ -15,8 +15,8 @@
   },
   "homepage": "https://github.com/patrickmedaugh/jenkins-sample#readme",
   "description": "",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "mocha": "^5.2.0"
-  }
+  },
+  "devDependencies": {}
 }
