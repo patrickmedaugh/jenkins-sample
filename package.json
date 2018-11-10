@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/",
+    "test": "node_modules/mocha/bin/_mocha tests/",
     "build": "npm install",
     "start": "npm run build && npm run test && node index.js"
   },
