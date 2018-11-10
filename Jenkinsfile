@@ -8,9 +8,7 @@ pipeline {
         }
         stage('test') {
             steps {
-                retry(3) {
-                    sh 'npm test'
-                }
+                sh 'npm test'
             }
         }
     }
